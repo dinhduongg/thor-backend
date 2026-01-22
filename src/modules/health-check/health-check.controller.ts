@@ -1,5 +1,5 @@
-import { Controller, Get, VERSION_NEUTRAL } from '@nestjs/common';
-import { HealthCheckService } from './health-check.service';
+import { Controller, Get, VERSION_NEUTRAL } from '@nestjs/common'
+import { HealthCheckService } from './health-check.service'
 
 @Controller({ path: 'health-check', version: VERSION_NEUTRAL })
 export class HealthCheckController {
@@ -7,6 +7,6 @@ export class HealthCheckController {
 
   @Get()
   async check() {
-    return this.healthCheckService.check();
+    return this.healthCheckService.check()
   }
 }

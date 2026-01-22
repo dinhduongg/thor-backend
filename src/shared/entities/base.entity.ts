@@ -1,10 +1,10 @@
-import { PrimaryKey } from '@mikro-orm/core';
+import { PrimaryKey } from '@mikro-orm/core'
 
 export abstract class BaseEntity<T> {
   @PrimaryKey()
-  id!: number;
+  id!: number
 
   constructor(entity: Partial<T>) {
-    Object.assign(this, entity);
+    Object.assign(this, entity)
   }
 }

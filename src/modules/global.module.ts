@@ -1,9 +1,9 @@
-import { Module } from '@nestjs/common';
-import { HealthCheckModule } from './health-check/health-check.module';
-import { ProductsModule } from './products/products.module';
-import { DatabaseModule } from '@/core/database/database.module';
+import { Module } from '@nestjs/common'
+import { CategoriesModule } from './categories/categories.module'
+import { CategoryTranslationsModule } from './category-translations/category-translations.module'
+import { HealthCheckModule } from './health-check/health-check.module'
 
 @Module({
-  imports: [HealthCheckModule, DatabaseModule, ProductsModule],
+  imports: [HealthCheckModule, CategoriesModule, CategoryTranslationsModule],
 })
 export class GlobalModule {}

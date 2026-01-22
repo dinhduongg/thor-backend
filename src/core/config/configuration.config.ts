@@ -56,4 +56,4 @@ export default () => ({
     expiresIn: process.env.JWT_EXPIRES_IN,
     algorithm: process.env.JWT_ALGORITHM,
   },
-});
+})
